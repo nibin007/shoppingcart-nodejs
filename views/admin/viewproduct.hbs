@@ -1,0 +1,38 @@
+<section>
+<div class="container"> 
+  <a href="/admin/add-product" class="btn btn-success mt-5">addproduct</a>
+    <div class="row mt-3"> 
+   
+<table class="table mt-5" id="productstable">
+  <thead>
+    <tr>
+      <th scope="col">number</th>
+      <th scope="col">product name</th>
+      <th scope="col">category</th>
+      <th scope="col">description</th>
+      <th scope="col">Image</th>
+      <th scope="col">delete and edit</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each products}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.description}}</td>
+      <td><img style="width:50px;height:50px" src="/productimages/{{this._id}}.jpg" alt=""></td>
+       <td><a href="/admin/editproduct/{{this._id}}" class="btn btn-primary">edit</a>
+           <a href="/admin/delete/{{this._id}}" class="btn btn-danger" onclick="return confirm('are u sure u want to delete {{this.name}}?')">delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</div>
+</section>
+<script>
+  $(function() {
+    $('#productstable').DataTable();
+  });
+</script>

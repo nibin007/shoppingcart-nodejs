@@ -1,0 +1,30 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "busboy": "^0.3.1",
+    "connect-busboy": "0.0.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "decrypt": "0.0.1",
+    "express": "~4.16.1",
+    "express-busboy": "^8.0.0",
+    "express-fileupload": "^1.2.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "hbs": "^4.1.2",
+    "http-errors": "~1.6.3",
+    "mongodb": "^4.1.2",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12",
+    "promise": "^8.1.0",
+    "razorpay": "^2.0.7"
+  }
+}
